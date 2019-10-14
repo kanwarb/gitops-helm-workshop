@@ -6,22 +6,17 @@ metadata:
   namespace: prod
   annotations:
     fluxcd.io/ignore: "false"
-    fluxcd.io/automated: "true"
-    fluxcd.io/tag.chart-image: semver:~3.1
+    fluxcd.io/automated: "false"
 spec:
   releaseName: podinfo
   chart:
-    git: git@github.com:stefanprodan/gitops-helm-workshop
+    git: git@github.com:kanwarb/gitops-helm-workshop
     ref: master
     path: cluster/charts/podinfo
   values:
     image:
       repository: stefanprodan/podinfo
-<<<<<<< HEAD
       tag: 4.0.0
-=======
-      tag: 3.1.5
->>>>>>> fa8b12aa8e15c0855faca339ad9922347a6dd0b1
     service:
       enabled: false
       type: ClusterIP
