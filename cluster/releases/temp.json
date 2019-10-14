@@ -1,0 +1,212 @@
+{
+  "apiVersion": "v1",
+  "items": [
+    {
+      "apiVersion": "v1",
+      "kind": "Namespace",
+      "metadata": {
+        "creationTimestamp": "2019-10-03T19:51:30Z",
+        "name": "default",
+        "resourceVersion": "150",
+        "selfLink": "/api/v1/namespaces/default",
+        "uid": "31a3e96f-e617-11e9-8398-025000000001"
+      },
+      "spec": {
+        "finalizers": [
+          "kubernetes"
+        ]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Namespace",
+      "metadata": {
+        "creationTimestamp": "2019-10-03T19:52:50Z",
+        "name": "docker",
+        "resourceVersion": "480",
+        "selfLink": "/api/v1/namespaces/docker",
+        "uid": "61465df6-e617-11e9-8398-025000000001"
+      },
+      "spec": {
+        "finalizers": [
+          "kubernetes"
+        ]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Namespace",
+      "metadata": {
+        "creationTimestamp": "2019-10-11T17:44:25Z",
+        "deletionTimestamp": "2019-10-14T20:33:53Z",
+        "name": "fluxcd",
+        "resourceVersion": "279771",
+        "selfLink": "/api/v1/namespaces/fluxcd",
+        "uid": "c453b78e-ec4e-11e9-b056-025000000001"
+      },
+      "spec": {
+        "finalizers": [
+          "kubernetes"
+        ]
+      },
+      "status": {
+        "phase": "Terminating"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Namespace",
+      "metadata": {
+        "annotations": {
+          "fluxcd.io/ignore": "false",
+          "fluxcd.io/sync-checksum": "4650ae5f82b255113de10fd402c9f8bef3ee7b99",
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/ignore\":\"false\",\"fluxcd.io/sync-checksum\":\"4650ae5f82b255113de10fd402c9f8bef3ee7b99\",\"linkerd.io/inject\":\"enabled\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.wQSIehBGc1BCp8sRrpAtEGc3QMUwaFGQ8QjW7t5mT0M\"},\"name\":\"ingress-nginx\"}}\n",
+          "linkerd.io/inject": "enabled"
+        },
+        "creationTimestamp": "2019-10-11T17:46:16Z",
+        "labels": {
+          "fluxcd.io/sync-gc-mark": "sha256.wQSIehBGc1BCp8sRrpAtEGc3QMUwaFGQ8QjW7t5mT0M"
+        },
+        "name": "ingress-nginx",
+        "resourceVersion": "219196",
+        "selfLink": "/api/v1/namespaces/ingress-nginx",
+        "uid": "0674fe89-ec4f-11e9-b056-025000000001"
+      },
+      "spec": {
+        "finalizers": [
+          "kubernetes"
+        ]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Namespace",
+      "metadata": {
+        "creationTimestamp": "2019-10-03T19:51:27Z",
+        "name": "kube-node-lease",
+        "resourceVersion": "7",
+        "selfLink": "/api/v1/namespaces/kube-node-lease",
+        "uid": "2fadfa7e-e617-11e9-8398-025000000001"
+      },
+      "spec": {
+        "finalizers": [
+          "kubernetes"
+        ]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Namespace",
+      "metadata": {
+        "creationTimestamp": "2019-10-03T19:51:27Z",
+        "name": "kube-public",
+        "resourceVersion": "6",
+        "selfLink": "/api/v1/namespaces/kube-public",
+        "uid": "2fad3341-e617-11e9-8398-025000000001"
+      },
+      "spec": {
+        "finalizers": [
+          "kubernetes"
+        ]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Namespace",
+      "metadata": {
+        "creationTimestamp": "2019-10-03T19:51:26Z",
+        "name": "kube-system",
+        "resourceVersion": "5",
+        "selfLink": "/api/v1/namespaces/kube-system",
+        "uid": "2fac91da-e617-11e9-8398-025000000001"
+      },
+      "spec": {
+        "finalizers": [
+          "kubernetes"
+        ]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Namespace",
+      "metadata": {
+        "annotations": {
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"linkerd.io/inject\":\"disabled\"},\"labels\":{\"linkerd.io/is-control-plane\":\"true\"},\"name\":\"linkerd\"}}\n",
+          "linkerd.io/inject": "disabled"
+        },
+        "creationTimestamp": "2019-10-11T18:28:30Z",
+        "deletionTimestamp": "2019-10-14T20:33:53Z",
+        "labels": {
+          "linkerd.io/is-control-plane": "true"
+        },
+        "name": "linkerd",
+        "resourceVersion": "279769",
+        "selfLink": "/api/v1/namespaces/linkerd",
+        "uid": "ecfc71ab-ec54-11e9-b056-025000000001"
+      },
+      "spec": {
+        "finalizers": [
+          "kubernetes"
+        ]
+      },
+      "status": {
+        "phase": "Terminating"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Namespace",
+      "metadata": {
+        "annotations": {
+          "fluxcd.io/ignore": "false",
+          "fluxcd.io/sync-checksum": "5ed4c7b2bf78c75c896c62aca75af4c961dbfcdd",
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/ignore\":\"false\",\"fluxcd.io/sync-checksum\":\"5ed4c7b2bf78c75c896c62aca75af4c961dbfcdd\",\"linkerd.io/inject\":\"enabled\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.J1t75p46P_ERuqvNcchGiGH9Nc1jnZtt3sng-X2Ppdg\"},\"name\":\"prod\"}}\n",
+          "linkerd.io/inject": "enabled"
+        },
+        "creationTimestamp": "2019-10-14T20:02:13Z",
+        "deletionTimestamp": "2019-10-14T20:33:53Z",
+        "labels": {
+          "fluxcd.io/sync-gc-mark": "sha256.J1t75p46P_ERuqvNcchGiGH9Nc1jnZtt3sng-X2Ppdg"
+        },
+        "name": "prod",
+        "resourceVersion": "279770",
+        "selfLink": "/api/v1/namespaces/prod",
+        "uid": "83b4be58-eebd-11e9-b057-025000000001"
+      },
+      "spec": {
+        "finalizers": [
+          "kubernetes"
+        ]
+      },
+      "status": {
+        "phase": "Terminating"
+      }
+    }
+  ],
+  "kind": "List",
+  "metadata": {
+    "resourceVersion": "",
+    "selfLink": ""
+  },
+  "spec": {
+    "finalizers": []
+  }
+}
