@@ -5,7 +5,7 @@ metadata:
   name: podinfo
   namespace: prod
   annotations:
-    fluxcd.io/ignore: "true"
+    fluxcd.io/ignore: "false"
     fluxcd.io/automated: "false"
     fluxcd.io/tag.chart-image: semver:~3.0
 spec:
@@ -31,4 +31,4 @@ spec:
           proxy_hide_header l5d-server-id;
       path: /
       hosts:
-      - 35.198.97.122.nip.io
+      - podinfo.apple.com
