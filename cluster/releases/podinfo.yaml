@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: stefanprodan/podinfo
-      tag: 4.0.0
+      tag: 2.1.0
     service:
       enabled: false
       type: ClusterIP
