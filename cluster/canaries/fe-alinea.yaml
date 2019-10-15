@@ -1,0 +1,37 @@
+apiVersion: flagger.app/v1alpha3
+kind: Canary
+metadata:
+  name: fe-alinea
+  namespace: fe-alinea
+  annotations:
+    fluxcd.io/ignore: "false"
+spec:
+  targetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: fe-alinea
+  service:
+    port: 8080
+  canaryAnalysis:
+    interval: 10s
+    stepWeight: 5
+    threshold: 5
+    metrics:
+      - name: request-success-rate
+        threshold: 99
+        interval: 1m
+      - name: request-duration
+        threshold: 500
+        interval: 1m
+    webhooks:
+      - name: "helm test"
+        type: pre-rollout
+        url: http://helm-tester.fe-alinea/
+        timeout: 2m
+        metadata:
+          type: "helm"
+          cmd: "test run fe-alinea --cleanup"
+      - name: load-test
+        url: http://load-tester.fe-alinea/
+        metadata:
+          cmd: "hey -z 2m -q 10 -c 2 http://fe-alinea:8080/"
